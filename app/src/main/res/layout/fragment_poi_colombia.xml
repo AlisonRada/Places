@@ -55,7 +55,7 @@
                     android:id="@+id/idImagen"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/castillo_salgar"
+                    android:src="@drawable/playa_san_andres"
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="10dp"/>
 
@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Castillo de San Antonio de Salgar"
+                        android:text="Playa Spratt Bright"
                         android:textSize="25sp"
                         android:textStyle="bold" />
 

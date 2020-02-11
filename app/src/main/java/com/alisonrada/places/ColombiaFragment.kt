@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 
 /**
  * A simple [Fragment] subclass.
@@ -17,7 +18,21 @@ class ColombiaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_colombia, container, false)
+
+        val v = inflater.inflate(R.layout.fragment_colombia, container, false);
+
+        val btn = v.findViewById<View>(R.id.more2_btn) as Button
+
+        btn.setOnClickListener {
+            val fragment = PoiColombiaFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.contaner, fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
+
+        return v;
     }
 
 

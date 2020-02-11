@@ -33,11 +33,12 @@
 
         <TextView
             android:id="@+id/title_atl"
-            android:layout_width="138dp"
-            android:layout_height="34dp"
+            android:layout_width="238dp"
+            android:layout_height="47dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Puerto Colombia"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,14 +59,15 @@
             android:layout_width="166dp"
             android:layout_height="80dp"
             android:gravity="center"
-            android:text="@android:string/fingerprint_icon_content_description"
+            android:text="Bienvenidos a Pto"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/more_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ver más"
@@ -73,5 +75,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

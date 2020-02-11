@@ -21,9 +21,20 @@ class AtlanticoFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        b1 = view?.findViewById(R.id.atlantico_btn) as Button;
+        val v = inflater.inflate(R.layout.fragment_atlantico, container, false);
 
-        return inflater.inflate(R.layout.fragment_atlantico, container, false)
+        val btn = v.findViewById<View>(R.id.more_btn) as Button
+
+        btn.setOnClickListener {
+            val fragment = PoiAtlanticoFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.contaner, fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
+
+        return v;
     }
 
 
