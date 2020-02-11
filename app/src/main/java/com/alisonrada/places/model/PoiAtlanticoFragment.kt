@@ -1,4 +1,4 @@
-package com.alisonrada.places.Model
+package com.alisonrada.places.model
 
 
 import android.os.Bundle
